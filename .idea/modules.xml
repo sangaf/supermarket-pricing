@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/supermarket-pricing.iml" filepath="$PROJECT_DIR$/.idea/modules/supermarket-pricing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/supermarket-pricing_main.iml" filepath="$PROJECT_DIR$/.idea/modules/supermarket-pricing_main.iml" group="supermarket-pricing" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/supermarket-pricing_test.iml" filepath="$PROJECT_DIR$/.idea/modules/supermarket-pricing_test.iml" group="supermarket-pricing" />
+    </modules>
+  </component>
+</project>

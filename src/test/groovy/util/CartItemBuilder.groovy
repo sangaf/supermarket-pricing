@@ -26,7 +26,6 @@ class CartItemBuilder {
     }
 
 
-
     public CartItem build(){
         new CartItem(this.item, this.quantity)
     }

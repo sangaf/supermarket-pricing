@@ -12,13 +12,13 @@ public class Item {
 
     ItemCode itemCode;
     BigDecimal price;
-    UnitCode priceCode;
+    UnitCode unitCode;
 
 
-    public Item(ItemCode itemCode, BigDecimal price, UnitCode priceCode) {
+    public Item(ItemCode itemCode, BigDecimal price, UnitCode unitCode) {
         this.itemCode = itemCode;
         this.price = price;
-        this.priceCode = priceCode;
+        this.unitCode = unitCode;
     }
 
     public ItemCode getItemCode() {
@@ -29,7 +29,27 @@ public class Item {
         return price;
     }
 
-    public UnitCode getPriceCode() {
-        return priceCode;
+    public UnitCode getUnitCode() {
+        return unitCode;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Item)) return false;
+
+        Item item = (Item) o;
+
+        if (getItemCode() != item.getItemCode()) return false;
+        if (getPrice() != null ? !getPrice().equals(item.getPrice()) : item.getPrice() != null) return false;
+        return getUnitCode() == item.getUnitCode();
+    }
+
+    @Override
+    public int hashCode() {
+        int result = getItemCode() != null ? getItemCode().hashCode() : 0;
+        result = 31 * result + (getPrice() != null ? getPrice().hashCode() : 0);
+        result = 31 * result + (getUnitCode() != null ? getUnitCode().hashCode() : 0);
+        return result;
     }
 }

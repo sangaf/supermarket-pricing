@@ -11,7 +11,7 @@ class ItemBuilder {
 
     ItemCode itemCode
     BigDecimal price
-    UnitCode priceCode
+    UnitCode unitCode
 
     public static ItemBuilder itemBuilder(){
         return new ItemBuilder()
@@ -27,14 +27,14 @@ class ItemBuilder {
         this
     }
 
-    public ItemBuilder withPriceCode(UnitCode priceCode){
-        this.priceCode = priceCode
+    public ItemBuilder withUnitCode(UnitCode unitCode){
+        this.unitCode = unitCode
         this
     }
 
 
     public Item build(){
-        new Item(this.itemCode, this.price, this.priceCode)
+        new Item(this.itemCode, this.price, this.unitCode)
     }
 
 

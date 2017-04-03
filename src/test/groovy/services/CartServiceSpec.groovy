@@ -18,8 +18,8 @@ class CartServiceSpec extends Specification {
 
     CartService cartService
 
-    Item item1 = itemBuilder().withItemCode(BEAN).withPrice("1").withPriceCode(CAN).build()
-    Item item2 = itemBuilder().withItemCode(APPLE).withPrice("3").withPriceCode(KILO).build()
+    Item item1 = itemBuilder().withItemCode(BEAN).withPrice("1").withUnitCode(CAN).build()
+    Item item2 = itemBuilder().withItemCode(APPLE).withPrice("3").withUnitCode(KILO).build()
     CartItem cartItem1 = cartItemBuilder().withItem(item1).withQuantity(3).build()
     CartItem cartItem2 = cartItemBuilder().withItem(item2).withQuantity(5).build()
 

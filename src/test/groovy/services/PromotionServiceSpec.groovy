@@ -22,7 +22,7 @@ class PromotionServiceSpec extends Specification {
 
     def "getPromotion should return promotion for the item"(){
         given:
-            Item item = itemBuilder().withItemCode(BEAN).withPrice("4").withPriceCode(CAN).build()
+            Item item = itemBuilder().withItemCode(BEAN).withPrice("4").withUnitCode(CAN).build()
         when:
             PromotionCode promotionCode = promotionService.getPromotionCodeForItem(item)
 

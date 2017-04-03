@@ -6,6 +6,7 @@ package org.sanjida.supermarket.code;
 public enum UnitCode {
 
     KILO("kilo"),
+    BOTTLE("bottle"),
     CAN("can");
 
     private UnitCode(String unit){

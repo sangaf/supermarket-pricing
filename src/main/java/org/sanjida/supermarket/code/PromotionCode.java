@@ -5,7 +5,7 @@ package org.sanjida.supermarket.code;
  */
 public enum PromotionCode {
 
-    BUY_TWO_GET_ONE_FREE(5001, "buyTwoGetOneFree", ItemCode.APPLE),
+    BUY_TWO_GET_ONE_FREE(5001, "buyTwoGetOneFree", ItemCode.COKE),
     BUY_TWO_CAN_FOR_ONE_POUND(5002, "buyTwoCanForOnePound", ItemCode.BEAN);
 
 

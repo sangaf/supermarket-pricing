@@ -7,7 +7,8 @@ public enum ItemCode {
 
     BEAN(1001,"bean"),
     TURNIP(2001,"turnip"),
-    APPLE(3001, "apple");
+    APPLE(3001, "apple"),
+    COKE(4001, "coke");
 
 
     private ItemCode(Integer id, String itemName){

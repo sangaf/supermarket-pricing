@@ -4,11 +4,11 @@
 
 At the end of the shopping user will checkout and calculate total price for different shopping items.
 
-Item is the unit of the supermarket shopping cart
+1. Item is the unit of the supermarket shopping cart
 
-Shopping promotions are associate with items hence ItemCode
+2. Shopping promotions are associate with items hence ItemCode
 
-Actual price of an Item can be get after applying promotions
+3. Actual price of an Item can be get after applying promotions
 
 * Promotions 
     - Buy two can of beans for £1
